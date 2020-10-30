@@ -1,0 +1,270 @@
+html{
+	margin:0;
+	padding:0;
+	background:black;
+}
+
+body{
+	margin:0;
+	padding:0;
+}
+
+/* - ACCUEIL - */
+
+#header_accueil{
+	z-index:5;
+}
+
+#nav_acceuil{
+  font-family: 'Allerta', cursive;
+  width: 100%;
+  background: black;
+  color: rgb(224, 236, 228);
+}
+#nav_acceuil > ul{
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+#Acceuil a{
+  color: white;
+}
+#Contact a{
+  color: white;
+}
+#nav_acceuil li{
+  list-style-type: none;
+}
+#nav_acceuil a{
+  text-decoration: none;
+}
+
+#nav_acceuil > ul > li{
+  position: relative;
+  padding: 20px 30px;
+}
+#nav_acceuil > ul > li:hover{
+  padding: 15px 30px 20px 30px;
+}
+.submenu{
+  display: none;
+}
+
+#nav_acceuil li:hover .submenu{
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  padding: 0px;
+  z-index: 10;
+}
+
+.submenu > li{
+  border-bottom: 2px solid black;
+  padding: 15px 30px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  background-color: rgb(121, 122, 126);
+}
+
+#Acceuil:hover, #Voyageurs:hover, #Continents:hover, #Contact:hover{
+  border-top: 5px solid white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.submenu > li:hover{
+  background-color: rgba(0, 0, 0, 0.15);
+  color: rgb(121, 122, 126);
+  font-weight: bold;
+}
+
+.submenu > li a{
+  color: white;
+}
+
+.sub_submenu{
+  display: none;
+}
+
+.submenu > li:hover .sub_submenu{
+  display: inline-block;
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  padding: 0px;
+  z-index: 10;
+  width: 150px;
+}
+
+.sub_submenu li{
+  padding: 15px 30px;
+  background-color: rgb(121, 122, 126);
+  border-bottom: 2px solid black;
+}
+
+.sub_submenu li:hover{
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.sub_submenu li a{
+  color: white;
+}
+
+.sub_submenu li:hover a{
+  color: rgb(121, 122, 126);
+}
+
+/***************/
+
+#bg_container{
+	position:relative;
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 20%, rgba(0,0,0,0.81) 80%, rgba(0,0,0,1) 95%);
+}
+
+#bg_vid{
+	position: relative; left: 50%; top: 0;
+	transform: translateX(-50%);
+	min-width: 100%; min-height: 100%;
+	width: auto; height: auto; z-index: -100;
+	background-size:100%;
+}
+
+#bg_title{
+	font-family:'Cambay', Courier;
+	text-align:center;
+	font-size:2em;
+	color:white;
+	margin:0;
+}
+
+#title_container{
+	position:absolute;
+	top:20%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	width:auto;
+	padding:1% 2% 0.85% 2%;
+	background: linear-gradient(0deg, #000000, #c3c3c3, #000000);
+    background-size: 600% 600%;
+    z-index:-1;
+    -webkit-animation: gradient_animation 1s 2.7s ease;
+    -moz-animation: gradient_animation 1s 2.7s ease;
+    animation: gradient_animation 1s 2.7s ease, move_up 1s 4s, opacity_down 0.8s 4s;
+    animation-fill-mode: forwards;
+}
+
+#coin_gauche{
+	content:"";
+	position:absolute;
+	background:white;
+	height:2px;
+	width:100%;
+	transform:scaleX(0);
+	transform-origin:left;
+	bottom:0;
+	left:0;
+	animation: 0.7s linear 0.5s cadre1;
+	animation-fill-mode: forwards;
+}
+
+#coin_droit{
+	content:"";
+	position:absolute;
+	background:white;
+	right:0;
+	bottom:0;
+	width:2px;
+	height: 100%;
+	transform:scaleY(0);
+	transform-origin:bottom;
+	animation: 0.4s linear 1.2s cadre2;
+	animation-fill-mode: forwards;
+}
+
+#coin_droit_haut{
+	content:"";
+	position:absolute;
+	background:white;
+	top:0;
+	right:0;
+	width:100%;
+	height:2px;
+	transform:scaleX(0);
+	transform-origin:right;
+	animation: 0.7s linear 1.6s cadre3;
+	animation-fill-mode: forwards;
+}
+
+#coin_gauche_haut{
+	content:"";
+	position:absolute;
+	background:white;
+	left:0;
+	top:0;
+	width:2px;
+	height: 100%;
+	transform:scaleY(0);
+	transform-origin:top;
+	animation: 0.4s linear 2.3s cadre4;
+	animation-fill-mode: forwards;
+}
+
+@media (width<700px){
+
+	#bg_container video{
+		display:none;
+	}
+
+	#bg_container{
+		/*background-image: url(../ressources/images/ireland.jpg);*/
+		height: 35vh;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-image:
+			linear-gradient(to bottom, rgba(255,255,255,0) 30%, rgba(0,0,0,0.81) 80%, rgba(0,0,0,1) 95%),
+			url(../ressources/images/ireland.jpg);
+	}
+
+}
+
+@keyframes cadre1{
+	0%{transform:scaleX(0);} 100%{transform:scaleX(1);}
+}
+
+@keyframes cadre2{
+	0%{transform:scaleY(0);} 100%{transform:scaleY(1);}
+}
+
+@keyframes cadre3{
+	0%{transform:scaleX(0);} 100%{transform:scaleX(1);}
+}
+
+@keyframes cadre4{
+	0%{transform:scaleY(0);} 100%{transform:scaleY(1);}
+}
+
+
+@-webkit-keyframes gradient_animation {
+    0%{background-position:50% 0%}
+    100%{background-position:50% 100%}
+}
+@-moz-keyframes gradient_animation {
+    0%{background-position:50% 0%}
+    100%{background-position:50% 100%}
+}
+@keyframes gradient_animation {
+    0%{background-position:50% 0%}
+    100%{background-position:50% 100%}
+}
+
+@keyframes move_up{
+	0%{transform:translate(-50%, -50%);} 100%{transform:translate(-50%, -400%);}
+}
+
+@keyframes opacity_down{
+	0%{opacity:1;} 80%{opacity:0;}
+}
