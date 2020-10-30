@@ -125,7 +125,7 @@ body{
 
 #bg_container{
 	position:relative;
-	background: linear-gradient(to bottom, rgba(255,255,255,0) 20%, rgba(0,0,0,0.81) 80%, rgba(0,0,0,1) 95%);
+	background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.9024743686537114) 10%, rgba(0,0,0,0.7512138644520308) 20%, rgba(0,0,0,0) 100%);
 }
 
 #bg_vid{
@@ -216,6 +216,39 @@ body{
 	animation-fill-mode: forwards;
 }
 
+#source_video{
+	position:absolute;
+	right:0;
+	top:30%;
+	transform:translateX(87%);
+	font-family:'Cambay', Courier;
+	color:white;
+	font-size:1.3em;
+	background:grey;
+	padding:1% 2% 0.9% 1%;
+	transition: all 0.5s;
+	border-radius:6px 0 0 6px;
+	box-shadow:3px 5px 4px rgba(0,0,0,0.6);
+}
+
+#source_video i{
+	color:#FFCC00;
+}
+
+#source_video a{
+	color:#FFCC00;
+	text-decoration: none
+}
+
+#source_video:hover{
+	transform:translateX(0);
+	transition: all 1s;
+}
+
+#source_video a:hover{
+	text-decoration: underline;
+}
+
 #anchors_container{
 	position:absolute;
 	width:100%;
@@ -287,9 +320,10 @@ body{
 	color:white;
 }
 
-
-
-
+.article_container{
+	background:blue;
+	border:2px solid red;
+}
 
 @media (width<700px){
 
@@ -298,7 +332,6 @@ body{
 	}
 
 	#bg_container{
-		/*background-image: url(../ressources/images/ireland.jpg);*/
 		height: 35vh;
 		background-size: 100%;
 		background-repeat: no-repeat;
@@ -312,6 +345,10 @@ body{
 	}
 
 	#anchors_container h2, #anchors_container h3{
+		display:none;
+	}
+
+	#source_video{
 		display:none;
 	}
 }
