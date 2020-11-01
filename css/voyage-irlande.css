@@ -370,6 +370,7 @@ body{
 #invisible_box{
 	height:10vh;
 	background:#000;
+	z-index:5;
 }
 
 #main_ireland{
@@ -378,12 +379,17 @@ body{
 
 .article_container{
 	background:white;
-	border:3px solid grey;
+	border-bottom:3px solid grey;
 	color:#666666;
 	display:flex;
 	flex-wrap:wrap;
 	width:100%;
 	padding-bottom:3%;
+	z-index:1;
+}
+
+#stpatrick_container{
+	border-bottom:0px;
 }
 
 .article_container h3{
@@ -425,6 +431,77 @@ body{
 	background:#CCCCCC;
 	color:#666666;
 	text-align:center;
+}
+
+
+/*** FOOTER ***/
+
+#footer_bottom{
+	position:relative;
+	width:100%;
+	display:flex;
+	justify-content: space-around;
+	text-align:center;
+	flex-wrap:wrap;
+	z-index:10;
+}
+
+#footer_bottom a{
+	text-decoration:none;
+	color:white;
+}
+
+#footer_bottom ul{
+	padding:0;
+}
+
+#footer_bottom li{
+	list-style-type: none;
+}
+
+#social_networks, #contact, #mentions{
+	position:relative;
+	margin-top:auto;
+	margin-bottom:auto;
+	min-width:200px;
+}
+
+#social_networks{
+	width:10%;
+}
+
+#social_networks li:hover{
+	transform:scale(1.3);
+	transition:all 0.4s;
+	list-style-type:initial;
+	color:blue;
+}
+
+#networks_list{
+	display:flex;
+	justify-content: space-between;
+	z-index:3;
+}
+
+#mentions li a{
+	position:relative;
+	text-align:center;
+}
+
+.underl{
+	position:absolute;
+	left:0;
+	bottom:0;
+	height:2px;
+	width:100%;
+	background:white;
+	transform:scaleX(0);
+}
+
+#mentions li:hover .underl{
+	transform:scaleX(1);
+	transition: all 0.7s ease-in-out;
+	transform-origin:center;
 }
 
 @media (width<700px){
