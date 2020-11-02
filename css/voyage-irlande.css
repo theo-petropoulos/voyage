@@ -2,6 +2,7 @@ html{
 	margin:0;
 	padding:0;
 	background:black;
+	scroll-behavior: smooth;
 }
 
 body{
@@ -11,6 +12,78 @@ body{
 }
 
 /* - ACCUEIL - */
+
+#header_mobile{
+	display:none;
+	position:sticky;
+	top:0;
+	z-index:12;
+	color:white;
+	width:100%;
+	text-align:center;
+	justify-content: center;
+	font-family:'Allerta', Courier;
+}
+
+#menu_cond{
+	background:black;
+}
+
+#header_mobile ul{
+	position:relative;
+	width:100%;
+	padding:0;
+	margin-top:0;
+	margin-bottom:0;
+}
+
+#header_mobile li{
+	position:relative;
+	display:flex;
+	list-style-type: none;
+	width:100%;
+}
+
+#header_mobile details, #header_mobile summary{
+	position:relative;
+	width:100%;
+	list-style-type: none;
+	display:flex;
+	justify-content: center;
+	flex-grow:1;
+}
+
+#header_mobile a{
+	position:relative;
+	text-decoration: none;
+	color:white;
+	width:100%;
+	flex-grow:1;
+}
+
+#menu_cond, .voy_item, .cont_item, #header_mobile a, #header_mobile details summary{
+	padding:2% 0 2% 0;
+}
+
+.menu_selector{
+	background:#333;
+	border-bottom:1px solid white;
+}
+
+.cont_item, .voy_item{
+	background:#6699FF;
+	border-bottom:1px solid white;
+}
+
+#cont_asie, #cont_amerique{
+	background:black;
+}
+
+#cont_afrique ~ a, #cont_europe ~ a, #cont_oceanie ~ a, #jeremy ~a, #keany ~a, #theo ~a{
+	background:white;
+	color:black;
+	border-bottom:1px solid black;
+}
 
 #header_accueil{
 	position:relative;
@@ -34,7 +107,7 @@ body{
   position: relative;
 }
 
-#nav_accueil a, .submenu a{
+#nav_accueil a, .submenu a,{
   color: white;
   text-decoration: none;
 }
@@ -51,12 +124,15 @@ body{
 
 .menu_buttons{
 	position:relative;
+	display:flex;
 	width:8vw;
 	font-size:calc(0.2em + 0.7vw);
 	text-align:center;
 	border-top:3px solid transparent;
 	box-shadow:0px 5px 5px rgba(0,0,0,0.4);
 	z-index:99;
+	text-align:center;
+	justify-content: center;
 }
 
 .menu_buttons:hover .submenu{
@@ -314,6 +390,7 @@ body{
 	opacity:0;
 	animation: move_up_alt 1s 3.3s ease-out, opacity_up 1s 3.3s;
 	animation-fill-mode: forwards;
+	z-index:10;
 }
 
 #anchors_container h2, #anchors_container h3{
@@ -370,10 +447,12 @@ body{
 #invisible_box{
 	height:10vh;
 	background:#000;
-	z-index:5;
+	z-index:4;
+	box-shadow: 0px 20px 29px 0px rgba(0,0,0,0.75);
 }
 
 #main_ireland{
+	position:relative;
 	font-family:'Cambay', Courier;
 }
 
@@ -386,6 +465,10 @@ body{
 	width:100%;
 	padding-bottom:3%;
 	z-index:1;
+}
+
+.article_container:nth-child(2n){
+	flex-direction:row-reverse;
 }
 
 #stpatrick_container{
@@ -433,6 +516,17 @@ body{
 	text-align:center;
 }
 
+#to_top{
+	position:static;
+	bottom:0;
+	background:white;
+	text-align:center;
+}
+
+#to_top a{
+	font-size:2em;
+	color:red;
+}
 
 /*** FOOTER ***/
 
@@ -463,7 +557,7 @@ body{
 	position:relative;
 	margin-top:auto;
 	margin-bottom:auto;
-	min-width:200px;
+	min-width:250px;
 }
 
 #social_networks{
@@ -539,6 +633,14 @@ body{
 		left:-100%;
 		border-left:0px;
 		border-right:2px solid black;
+	}
+
+	#header_accueil{
+		display:none;
+	}
+
+	#header_mobile{
+		display:flex;
 	}
 }
 

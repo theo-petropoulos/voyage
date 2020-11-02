@@ -14,7 +14,7 @@
 
 	<body>
 
-		<header id="header_acceuil">
+		<header id="header_accueil">
 
 			<nav id="nav_acceuil">
 
@@ -25,7 +25,7 @@
 						<ul class="submenu">
 							<li class="continents_list">AFRIQUE
 								<ul class="sub_submenu">
-									<li id="Jamaique" class="lien"><a href="Jamaique.html">Jamaïque</a></li>
+									<li id="Jamaique" class="lien"><a href="voyage-jamaique.html">Jamaïque</a></li>
 								</ul>
 							</li>
 
@@ -43,14 +43,14 @@
 
 		              		<li class="continents_list">EUROPE
 				                <ul class="sub_submenu">
-				                	<li id="Norvège" class="lien"><a href="#">Norvège</a></li>
+				                	<li id="Norvège" class="lien"><a href="voyage-norevege.html">Norvège</a></li>
 				                	<li id="Irlande" class="lien"><a href="voyage-irlande.html">Irlande</a></li>
 				                </ul>
 				            </li>
 
 				            <li class="continents_list">OCEANIE
 				                <ul class="sub_submenu">
-				                 	<li id="New_zeland" class="lien"><a href="#">New-Zeland</a></li>
+				                 	<li id="New_zeland" class="lien"><a href="voyage-newzealand">New-Zeland</a></li>
 				                </ul>
 				            </li>
 
@@ -83,6 +83,55 @@
 	          		<li id="Contact" class="menu_buttons"><a href="#">Contact</a></li>
         		</ul>
       		</nav>
+
+		</header>
+
+		<header id="header_mobile">
+			<details>
+				<summary id="menu_cond">Menu</summary>
+					<ul id="header_mobile_list">
+						<li class="header_mobile_item"><a href="../voyages.html" class="menu_selector">Accueil</a></li>
+						<li class="header_mobile_item">
+							<details>
+								<summary class="menu_selector">Continents</summary>
+									<details>
+										<summary id="cont_afrique" class="cont_item">Afrique</summary>
+										<a href="voyage-jamaique.html">Jamaïque</a>
+									</details>
+								<span id="cont_amerique" class="cont_item">Amérique</span><br><br>
+								<span id="cont_asie" class="cont_item">Asie</span><br>
+									<details>
+										<summary id="cont_europe" class="cont_item">Europe</summary>
+										<a href="voyage-norvege.html">Norvège</a><br>
+										<a htef="voyage-irlande.html">Irlande</a>
+									</details>
+									<details>
+										<summary id="cont_oceanie" class="cont_item">Océanie</summary>
+										<a href="voyage-newzealand.html">Nouvelle Zélande</a>
+									</details>
+							</details>
+						</li>
+						<li class="header_mobile_item">
+							<details>
+								<summary class="menu_selector">Voyageurs</summary>
+									<details>
+										<summary id="jeremy" class="voy_item">Jeremy</summary>
+										<a href="voyage-newzealand.html">Nouvelle Zélande</a>
+									</details>
+									<details>
+										<summary id="keany" class="voy_item">Keany</summary>
+										<a href="voyage-jamaique.html">Jamaïque</a><br>
+										<a href="voyage-norvege.html">Norvège</a>
+									</details>
+									<details>
+										<summary id="theo" class="voy_item">Théo</summary>
+										<a href="voyage-irlande.html">Irlande</a>
+									</details>
+							</details>
+						</li>
+						<li class="header_mobile_item"><a href="" class="menu_selector">Contact</a></li>
+					</ul>
+				</details>
 
 		</header>
 
@@ -203,38 +252,42 @@
 					<img src="../ressources/images/templebar.jpg">
 					<figcaption>Le Temple Bar, institution irlandaise</figcaption>
 				</figure>
+
 			</section>
 
-			<footer id="footer_bottom">
-				<section id="contact">
-					<ul id="contact_list">
-						<li><a href="mailto:jeremy.dejoux@laplateforme.io">jeremy.dejoux@laplateforme.io</a></li>
-						<li><a href="mailto:keany.albertini@laplateforme.io">keany.albertini@laplateforme.io</a></li>
-						<li><a href="mailto:theo.petropoulos@laplateforme.io">theo.petropoulos@laplateforme.io</a></li>
-					</ul>
-				</section>
+			<div id="to_top"><a href="#bg_container"><i class="fas fa-caret-square-up"></i></a></div>
 
-				<section id="social_networks">
-					<ul id="networks_list">
-						<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-						<li><a href=""><i class="fab fa-twitter"></i></a></li>
-						<li><a href=""><i class="fab fa-youtube"></i></a></li>
-						<li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-					</ul>
-				</section>
-
-				<section id="mentions">
-					<ul id="mentions_list">
-						<li><a href="">Mentions légales<div class="underl"></div></a></li>
-						<li><a href="">Accessibilité<div class="underl"></div></a></li>
-						<li><a href="">Confidentialité<div class="underl"></div></a></li>
-						<li><a href="">A propos<div class="underl"></div></a></li>
-					</ul>
-				</section>
-
-			</footer>
-			
 		</main>
+
+
+		<footer id="footer_bottom">
+			<section id="contact">
+				<ul id="contact_list">
+					<li><a href="mailto:jeremy.dejoux@laplateforme.io">jeremy.dejoux@laplateforme.io</a></li>
+					<li><a href="mailto:keany.albertini@laplateforme.io">keany.albertini@laplateforme.io</a></li>
+					<li><a href="mailto:theo.petropoulos@laplateforme.io">theo.petropoulos@laplateforme.io</a></li>
+				</ul>
+			</section>
+
+			<section id="social_networks">
+				<ul id="networks_list">
+					<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+					<li><a href=""><i class="fab fa-twitter"></i></a></li>
+					<li><a href=""><i class="fab fa-youtube"></i></a></li>
+					<li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+				</ul>
+			</section>
+
+			<section id="mentions">
+				<ul id="mentions_list">
+					<li><a href="">Mentions légales<div class="underl"></div></a></li>
+					<li><a href="">Accessibilité<div class="underl"></div></a></li>
+					<li><a href="">Confidentialité<div class="underl"></div></a></li>
+					<li><a href="">A propos<div class="underl"></div></a></li>
+				</ul>
+			</section>
+
+		</footer>
 
 	</body>
 
