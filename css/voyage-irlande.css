@@ -458,7 +458,9 @@ body{
 
 .article_container{
 	background:white;
-	border-bottom:3px solid grey;
+	border-bottom:4px solid;
+	border-image:linear-gradient(90deg, rgba(138,138,138,0) 0%, rgba(138,138,138,1) 35%, rgba(138,138,138,1) 65%, rgba(138,138,138,0) 100%);
+	border-image-slice:1;
 	color:#666666;
 	display:flex;
 	flex-wrap:wrap;
