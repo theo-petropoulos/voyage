@@ -540,6 +540,7 @@ body{
 	text-align:center;
 	flex-wrap:wrap;
 	z-index:10;
+	background:black;
 }
 
 #footer_bottom a{

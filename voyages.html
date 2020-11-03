@@ -1,90 +1,179 @@
 <!DOCTYPE html>
+
 <html lang="fr" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/voyages.css">
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-    <title></title>
-  </head>
-  <body id="body_acceuil">
 
-    <header id="header_acceuil">
-      <nav id="nav_acceuil">
-        <ul>
-          <li id="Acceuil"><a href="#">Acceuil</a></li>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/voyages.css">
+		<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Allerta&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css2?family=Cambay&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/9ddb75d515.js" crossorigin="anonymous"></script>
+		<title>Accueil</title>
+	</head>
 
-          <li id="Continents">Continents
-            <ul class="submenu">
-              <li id="Afrique">AFRIQUE
-                <ul class="sub_submenu">
-                  <li id="Jmaique" class="lien"><a href="Jamaique.html">Jamaïque</a></li>
-                </ul>
-              </li>
+	<body id="body_acceuil">
 
-              <li id="Amerique">AMERIQUE
-                <ul class="sub_submenu">
-                  <!-- <li id="Canada" class="lien"><a href="Canada.html">Canada</a></li> -->
-                </ul>
-              </li>
+    	<header id="header_accueil">
 
-              <li id="Asie">ASIE
-                <ul class="sub_submenu">
-                  <!-- <li id="Japon" class="lien"><a href="Japon.html">Japon</a></li> -->
-                </ul>
-              </li>
+			<nav id="nav_acceuil">
 
-              <li id="Europe">EUROPE
-                <ul class="sub_submenu">
-                  <li id="Norvège" class="lien"><a href="#">Norvège</a></li>
-                  <li id="Irlande" class="lien"><a href="voyages/voyage-irlande.html">Irlande</a></li>
-                </ul>
-              </li>
-              <li id="Oceanie">OCEANIE
-                <ul class="sub_submenu">
-                  <li id="New_zeland" class="lien"><a href="#">New-Zeland</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
+				<ul>
+					<li id="Acceuil" class="menu_buttons"><a href="voyages.html">Acceuil</a></li>
 
-          <li id="Voaygeurs">Voyageurs
-            <ul class="submenu">
-              <li id="Voaygeurs_1" class="lien"><a href="#">Jeremy</a>
-                <ul class="sub_submenu">
-                  <li id="New_Zeland"><a class="" href="#">New_Zeland</a></li>
-                </ul>
-              </li>
+					<li id="Continents" class="menu_buttons">Continents
+						<ul class="submenu">
+							<li class="continents_list">AFRIQUE
+								<ul class="sub_submenu">
+									<li id="Jamaique" class="lien"><a href="voyages/voyage-jamaique.html">Jamaïque</a></li>
+								</ul>
+							</li>
 
-              <li id="Voaygeurs_2" class="lien"><a href="#">Keany</a>
-                <ul class="sub_submenu">
-                  <li id="Jamaique"><a class="" href="#">Jamaïque</a></li>
-                  <li id="Norvège"><a class="" href="#">Norvège</a></li>
-                </ul>
-              </li>
+							<li class="continents_list">AMERIQUE
+								<ul class="sub_submenu">
+								<!-- <li id="Canada" class="lien"><a href="Canada.html">Canada</a></li> -->
+				                </ul>
+				            </li>
 
-              <li id="Voaygeurs_3" class="lien"><a href="#">Theo</a>
-              <ul class="sub_submenu">
-                <li id="Irlande"><a class="" href="voyages/voyage-irlande.html">Irlande</a></li>
-              </ul>
-            </li>
-            </ul>
-          </li>
+							<li class="continents_list">ASIE
+				                <ul class="sub_submenu">
+				                	<!-- <li id="Japon" class="lien"><a href="Japon.html">Japon</a></li> -->
+				                </ul>
+				            </li>
 
-          <li id="Contact"><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+		              		<li class="continents_list">EUROPE
+				                <ul class="sub_submenu">
+				                	<li id="Norvège" class="lien"><a href="voyages/voyage-norevege.html">Norvège</a></li>
+				                	<li id="Irlande" class="lien"><a href="voyages/voyage-irlande.html">Irlande</a></li>
+				                </ul>
+				            </li>
+
+				            <li class="continents_list">OCEANIE
+				                <ul class="sub_submenu">
+				                 	<li id="New_zeland" class="lien"><a href="voyages/voyage-newzealand.html">New-Zeland</a></li>
+				                </ul>
+				            </li>
+
+						</ul>
+		        	</li>
+
+					<li id="Voyageurs" class="menu_buttons">Voyageurs
+						<ul class="submenu">
+			             	<li class="voyageur">Jeremy
+				                <ul class="sub_submenu">
+				                  	<li id="New_Zeland"><a href="voyages/voyage-newzealand.html">New_Zeland</a></li>
+				                </ul>
+			              	</li>
+
+				            <li class="voyageur">Keany
+				                <ul class="sub_submenu">
+				                  	<li id="Jamaique"><a href="voyages/voyage-norevege.html">Jamaïque</a></li>
+				                  	<li id="Norvège"><a href="voyages/voyage-jamaique.html">Norvège</a></li>
+				                </ul>
+				            </li>
+
+			              	<li class="voyageur">Theo
+					            <ul class="sub_submenu">
+					                <li id="Irlande"><a href="voyages/voyage-irlande.html">Irlande</a></li>
+					        	</ul>
+			            	</li>
+	            		</ul>
+	         		</li>
+
+	          		<li id="Contact" class="menu_buttons"><a href="#">Contact</a></li>
+        		</ul>
+      		</nav>
+
+		</header>
+
+		<header id="header_mobile">
+			<details>
+				<summary id="menu_cond">Menu</summary>
+					<ul id="header_mobile_list">
+						<li class="header_mobile_item"><a href="../voyages.html" class="menu_selector">Accueil</a></li>
+						<li class="header_mobile_item">
+							<details>
+								<summary class="menu_selector">Continents</summary>
+									<details>
+										<summary id="cont_afrique" class="cont_item">Afrique</summary>
+										<a href="voyages/voyage-jamaique.html">Jamaïque</a>
+									</details>
+								<span id="cont_amerique" class="cont_item">Amérique</span><br><br>
+								<span id="cont_asie" class="cont_item">Asie</span><br>
+									<details>
+										<summary id="cont_europe" class="cont_item">Europe</summary>
+										<a href="voyages/voyage-norvege.html">Norvège</a><br>
+										<a htef="voyages/voyage-irlande.html">Irlande</a>
+									</details>
+									<details>
+										<summary id="cont_oceanie" class="cont_item">Océanie</summary>
+										<a href="voyages/voyage-newzealand.html">Nouvelle Zélande</a>
+									</details>
+							</details>
+						</li>
+						<li class="header_mobile_item">
+							<details>
+								<summary class="menu_selector">Voyageurs</summary>
+									<details>
+										<summary id="jeremy" class="voy_item">Jeremy</summary>
+										<a href="voyages/voyage-newzealand.html">Nouvelle Zélande</a>
+									</details>
+									<details>
+										<summary id="keany" class="voy_item">Keany</summary>
+										<a href="voyages/voyage-jamaique.html">Jamaïque</a><br>
+										<a href="voyages/voyage-norvege.html">Norvège</a>
+									</details>
+									<details>
+										<summary id="theo" class="voy_item">Théo</summary>
+										<a href="voyages/voyage-irlande.html">Irlande</a>
+									</details>
+							</details>
+						</li>
+						<li class="header_mobile_item"><a href="" class="menu_selector">Contact</a></li>
+					</ul>
+				</details>
+
+		</header>
 
 
-    <main id="main_acceuil">
+		<main id="main_acceuil">
 
-    </main>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-
-    <footer id="footer_acceuil">
-
-    </footer>
+		</main>
 
 
-  </body>
+		<footer id="footer_bottom">
+			<section id="contact">
+				<ul id="contact_list">
+					<li><a href="mailto:jeremy.dejoux@laplateforme.io">jeremy.dejoux@laplateforme.io</a></li>
+					<li><a href="mailto:keany.albertini@laplateforme.io">keany.albertini@laplateforme.io</a></li>
+					<li><a href="mailto:theo.petropoulos@laplateforme.io">theo.petropoulos@laplateforme.io</a></li>
+				</ul>
+			</section>
+
+			<section id="social_networks">
+				<ul id="networks_list">
+					<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+					<li><a href=""><i class="fab fa-twitter"></i></a></li>
+					<li><a href=""><i class="fab fa-youtube"></i></a></li>
+					<li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+				</ul>
+			</section>
+
+			<section id="mentions">
+				<ul id="mentions_list">
+					<li><a href="">Mentions légales<div class="underl"></div></a></li>
+					<li><a href="">Accessibilité<div class="underl"></div></a></li>
+					<li><a href="">Confidentialité<div class="underl"></div></a></li>
+					<li><a href="">A propos<div class="underl"></div></a></li>
+				</ul>
+			</section>
+
+		</footer>
+
+
+		</body>
+
 </html>
