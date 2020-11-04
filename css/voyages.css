@@ -5,12 +5,6 @@ html{
   scroll-behavior: smooth;
 }
 
-body{
-  margin:0;
-  padding:0;
-  overflow-x: hidden;
-}
-
 /* - ACCUEIL - */
 
 #header_mobile{
@@ -250,7 +244,40 @@ body{
   color: white;
 }
 
+/*** BODY ***/
 
+body{
+  margin:0;
+  padding:0;
+  overflow-x: hidden;
+  position:relative;
+  background:#1A4D80;
+}
+
+#main_accueil{
+  position:relative;
+}
+
+#accueil_bg{
+  position:relative;
+  width: 100vw; height: 30vh;
+  margin-right:auto;
+  margin-left:auto;
+  background-size:100%;
+  overflow:hidden;
+  display:flex;
+  justify-content: center;
+  object-fit: cover;
+}
+
+#accueil_bg img{
+  position:absolute;
+  top:10%;
+  transform-origin:center;
+  -webkit-animation: rotation_globe 35s linear infinite;
+  -moz-animation: rotation_globe 35s linear infinite;
+  animation: rotation_globe 35s linear infinite;
+}
 
 
 
@@ -445,4 +472,17 @@ body{
   74%{transform:scaleY(1.48);}
   76%{transform:scaleY(1.5);}
   100%{transform:scaleY(1.5);}
+}
+
+@keyframes rotation_globe{
+  0%{
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform:rotate(0deg);
+    } 
+  100%{
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform:rotate(360deg);
+    }
 }
