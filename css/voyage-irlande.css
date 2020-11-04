@@ -541,6 +541,7 @@ body{
 	flex-wrap:wrap;
 	z-index:10;
 	background:black;
+	font-family:'Allerta', Courier;
 }
 
 #footer_bottom a{
