@@ -202,13 +202,12 @@ html{
 .continents_list li{background:rgb(51, 51, 51);color:white;}
 
 .submenu li{
-  height: 6vh;
+  height: 3vh;
   display:flex;
   align-items:center;
   justify-content: center;
   position:relative;
   border-bottom:2px solid white;
-  z-index:2;
 }
 
 .submenu li:hover{
@@ -253,7 +252,7 @@ body{
   padding:0;
   overflow-x: hidden;
   position:relative;
-  /* background:#1A4D80; */
+  background:#1A4D80; 
 }
 
 #main_accueil{
@@ -428,8 +427,8 @@ body{
   background-position:bottom;
 }
 
-#norway_accueil summary{
-  background:url("../ressources/images/norway_accueil.jpg");
+#jamaique_accueil summary{
+  background:url("../ressources/images/jamaique_accueil.jpg");
   background-size:100%;
   background-position:bottom;
 }
@@ -446,7 +445,7 @@ body{
   opacity:0.85;
 }
 
-#nz_accueil h2, #norway_accueil h2{
+#nz_accueil h2, #jamaique_accueil h2{
   left:2%;
 }
 
