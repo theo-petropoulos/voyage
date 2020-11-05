@@ -287,6 +287,10 @@ body{
   overflow:hidden;
 }
 
+#title_accueil{
+  position:relative;
+}
+
 #block_main h1{
   margin:0;
   padding:1% 0;
@@ -302,15 +306,68 @@ body{
   color:#236EBA;
 }
 
+#rf, #lf{
+  position:absolute;
+  z-index:3;
+  width:4%;
+  left:0;
+  bottom:0;
+}
+
+#lf{
+  bottom:10%;
+  animation:left_feet_animation 10s 0.6s steps(1, end) infinite;
+}
+
+#rf{
+  animation:right_feet_animation 10s 0s steps(1, end) infinite;
+}
+
 #description_accueil{
-  display:flex;
-  flex-direction:column-reverse;
   background:white;
   justify-content: center;
   width:100%;
   text-align:center;
   font-family:'Allerta', Courier;
   color:#1A4D80;
+  overflow:hidden;
+}
+
+#description_accueil summary{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  list-style-type: none;
+  height:10vh;
+  background:url("../ressources/images/bg_presentation.jpg");
+  background-size:100%;
+  background-position:center;
+}
+
+#description_accueil summary:hover{
+  cursor:pointer;
+  transform:scale(1.03);
+  transform-origin:center;
+  transition:transform 0.6s;
+}
+
+#description_accueil h2{
+  margin:0;
+  font-size:calc(1.2em + 1.2vw);
+  font-family:'Cambay', Courier;
+  color:white;
+  filter:blur(0.3px);
+  opacity:0.85;
+}
+
+#description_accueil details[open] #description_flex{
+  animation:details_down 500ms 0s ease, opacity_up 500ms 0ms ease;
+  animation-fill-mode:forwards;
+}
+
+#description_flex{
+  display:flex;
+  flex-direction:column-reverse;
 }
 
 #jeremy_sign{font-family:'Beth Ellen', Courier;font-weight:500;}
@@ -384,7 +441,8 @@ body{
   color:white;
   font-size:calc(1.2em + 1.2vw);
   font-family:'Cambay', Courier;
-  text-shadow:3px 6px 8px rgba(255,255,255,0.8);
+  filter:blur(0.3px);
+  opacity:0.85;
 }
 
 #nz_accueil h2, #norway_accueil h2{
@@ -438,6 +496,40 @@ body{
   flex-grow:1;
   width:100%;
   height:100%;
+}
+
+#gallerie_photo{
+  width:100%;
+  height:50vh;
+  position:relative;
+  background:white;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    "photo1 photo1 photo2 photo2 photo2 photo3 photo3"
+    "photo1 photo1 photo4 photo4 photo4 photo3 photo3"
+    "photo5 photo5 photo4 photo4 photo4 photo3 photo3"
+    "photo5 photo5 photo6 photo6 photo7 photo7 photo7"
+    "photo5 photo5 photo6 photo6 photo7 photo7 photo7";
+  object-fit:fill;
+  object-fit:cover;
+}
+
+.photo1 { grid-area: photo1; }
+.photo2 { grid-area: photo2; }
+.photo3 { grid-area: photo3; }
+.photo4 { grid-area: photo4; }
+.photo5 { grid-area: photo5; }
+.photo6 { grid-area: photo6; }
+.photo7 { grid-area: photo7; }
+
+
+#gallerie_photo img{
+  width:100%;
+  height:100%;
+  border:1px solid black;
+  object-fit:cover;
 }
 
 /*** FOOTER ***/
@@ -670,4 +762,32 @@ body{
 @keyframes opacity_up{
   0%{opacity:0;}
   100%{opacity:1;}
+}
+
+@keyframes right_feet_animation{
+  0%{transform:translateX(2vw);}
+  10%{transform:translateX(10vw) translateY(-0.5vh) rotate(-8deg);}
+  20%{transform:translateX(16vw) translateY(-2vh) rotate(-35deg);}
+  30%{transform:translateX(24vw) translateY(-5vh) rotate(5deg);}
+  40%{transform:translateX(32vw) translateY(-1vh) rotate(20deg);}
+  50%{transform:translateX(40vw) translateY(1vh) rotate(0deg);}
+  60%{transform:translateX(48vw) translateY(0vh) rotate(-15deg);}
+  70%{transform:translateX(56vw) translateY(-2.5vh) rotate(-40deg);}
+  80%{transform:translateX(64vw) translateY(-4.5vh) rotate(-5deg);}
+  90%{transform:translateX(72vw) translateY(-1vh) rotate(20deg);}
+  100%{transform:translateX(80vw) translateY(0) rotate(0);}
+}
+
+@keyframes left_feet_animation{
+  0%{transform:translateX(6vw);}
+  10%{transform:translateX(12vw) translateY(-2vh) rotate(-8deg);}
+  20%{transform:translateX(20vw) translateY(-5vh) rotate(-35deg);}
+  30%{transform:translateX(28vw) translateY(-6vh) rotate(5deg);}
+  40%{transform:translateX(36vw) translateY(-2vh) rotate(20deg);}
+  50%{transform:translateX(44vw) translateY(0vh) rotate(0deg);}
+  60%{transform:translateX(52vw) translateY(-2vh) rotate(-30deg);}
+  70%{transform:translateX(60vw) translateY(-4vh) rotate(-15deg);}
+  80%{transform:translateX(68vw) translateY(-6vh) rotate(10deg);}
+  90%{transform:translateX(76vw) translateY(-2vh) rotate(20deg);}
+  100%{transform:translateX(84vw) translateY(-0.8vh) rotate(0);}
 }
