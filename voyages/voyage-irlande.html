@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="../css/voyage-irlande.css">
+		<link rel="stylesheet" href="../css/voyages.css">
+		<link href="https://fonts.googleapis.com/css2?family=Allerta&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css2?family=Cambay&display=swap" rel="stylesheet"> 
+		<script src="https://kit.fontawesome.com/9ddb75d515.js" crossorigin="anonymous"></script>
+		<title>Irlande</title>
+	</head>
+
+	<body id="body_ireland">
+
+		<header id="header_accueil">
+
+			<nav id="nav_acceuil">
+
+				<ul>
+					<li id="Acceuil" class="menu_buttons"><a href="../voyages.html">Acceuil</a></li>
+
+					<li id="Continents" class="menu_buttons">Continents
+						<ul class="submenu">
+							<li class="continents_list">AFRIQUE
+								<ul class="sub_submenu">
+									<li id="Jamaique" class="lien"><a href="voyage-jamaique.html">Jamaïque</a></li>
+								</ul>
+							</li>
+
+							<li class="continents_list">AMERIQUE
+								<ul class="sub_submenu">
+								<!-- <li id="Canada" class="lien"><a href="Canada.html">Canada</a></li> -->
+				                </ul>
+				            </li>
+
+							<li class="continents_list">ASIE
+				                <ul class="sub_submenu">
+				                	<!-- <li id="Japon" class="lien"><a href="Japon.html">Japon</a></li> -->
+				                </ul>
+				            </li>
+
+		              		<li class="continents_list">EUROPE
+				                <ul class="sub_submenu">
+				                	<li id="Norvège" class="lien"><a href="voyage-norevege.html">Norvège</a></li>
+				                	<li id="Irlande" class="lien"><a href="voyage-irlande.html">Irlande</a></li>
+				                </ul>
+				            </li>
+
+				            <li class="continents_list">OCEANIE
+				                <ul class="sub_submenu">
+				                 	<li id="New_zeland" class="lien"><a href="voyage-newzealand.html">New-Zeland</a></li>
+				                </ul>
+				            </li>
+
+						</ul>
+		        	</li>
+
+					<li id="Voyageurs" class="menu_buttons">Voyageurs
+						<ul class="submenu">
+			             	<li class="voyageur">Jeremy
+				                <ul class="sub_submenu">
+				                  	<li id="New_Zeland"><a href="voyage-newzealand.html">New_Zeland</a></li>
+				                </ul>
+			              	</li>
+
+				            <li class="voyageur">Keany
+				                <ul class="sub_submenu">
+				                  	<li id="Jamaique"><a href="voyage-jamaique.html">Jamaïque</a></li>
+				                  	<li id="Norvège"><a href="voyage-norevege.html">Norvège</a></li>
+				                </ul>
+				            </li>
+
+			              	<li class="voyageur">Theo
+					            <ul class="sub_submenu">
+					                <li id="Irlande"><a href="voyages/voyage-irlande.html">Irlande</a></li>
+					        	</ul>
+			            	</li>
+	            		</ul>
+	         		</li>
+
+	          		<li id="Contact" class="menu_buttons"><a href="#">Contact</a></li>
+        		</ul>
+      		</nav>
+
+		</header>
+
+		<header id="header_mobile">
+			<details>
+				<summary id="menu_cond">Menu</summary>
+					<ul id="header_mobile_list">
+						<li class="header_mobile_item"><a href="../voyages.html" class="menu_selector">Accueil</a></li>
+						<li class="header_mobile_item">
+							<details>
+								<summary class="menu_selector">Continents</summary>
+									<details>
+										<summary id="cont_afrique" class="cont_item">Afrique</summary>
+										<a href="voyage-jamaique.html">Jamaïque</a>
+									</details>
+								<span id="cont_amerique" class="cont_item">Amérique</span><br><br>
+								<span id="cont_asie" class="cont_item">Asie</span><br>
+									<details>
+										<summary id="cont_europe" class="cont_item">Europe</summary>
+										<a href="voyage-norvege.html">Norvège</a><br>
+										<a htef="voyage-irlande.html">Irlande</a>
+									</details>
+									<details>
+										<summary id="cont_oceanie" class="cont_item">Océanie</summary>
+										<a href="voyage-newzealand.html">Nouvelle Zélande</a>
+									</details>
+							</details>
+						</li>
+						<li class="header_mobile_item">
+							<details>
+								<summary class="menu_selector">Voyageurs</summary>
+									<details>
+										<summary id="jeremy" class="voy_item">Jeremy</summary>
+										<a href="voyage-newzealand.html">Nouvelle Zélande</a>
+									</details>
+									<details>
+										<summary id="keany" class="voy_item">Keany</summary>
+										<a href="voyage-jamaique.html">Jamaïque</a><br>
+										<a href="voyage-norvege.html">Norvège</a>
+									</details>
+									<details>
+										<summary id="theo" class="voy_item">Théo</summary>
+										<a href="voyage-irlande.html">Irlande</a>
+									</details>
+							</details>
+						</li>
+						<li class="header_mobile_item"><a href="" class="menu_selector">Contact</a></li>
+					</ul>
+				</details>
+
+		</header>
+
+		<section id="bg_container">
+			<video autoplay loop id="bg_vid">
+				<!-- SOURCE : https://www.youtube.com/watch?v=9sDt-CY2_VQ -->
+				<source src="../ressources/videos/ireland-crop.mp4" type="video/mp4">
+				<source src="../ressources/videos/ireland.mp4" type="video/mp4">
+				Votre navigateur ne prend pas en charge les vidéos intégrées.
+			</video>
+			<div id="title_container">
+				<h1 id="bg_title">La république d'Irlande</h1>
+				<div id="coin_gauche"></div><div id="coin_droit"></div><div id="coin_droit_haut"></div><div id="coin_gauche_haut"></div>
+			</div>
+
+			<div id="source_video">
+				<i class="fas fa-chevron-left"></i> Retrouvez la vidéo <a href="https://www.youtube.com/watch?v=9sDt-CY2_VQ">ici</a>
+			</div>
+
+			<section id="anchors_container">
+				<div id="dublin" class="bubble_container">
+					<a href="#dublin_container"><div class="bubble">
+						<img src="../ressources/images/dublin.jpg" alt="">
+					</div></a>
+					<h2>Dublin</h2>
+					<h3>La capitale</h3>
+				</div>
+
+				<div id="galway" class="bubble_container">
+					<a href="#galway_container"><div class="bubble">
+						<img src="../ressources/images/galway.jpg" alt="">
+					</div></a>
+					<h2>Galway</h2>
+					<h3>Le charme</h3>
+				</div>
+
+				<div id="distillery" class="bubble_container">
+					<a href="#distillery_container"><div class="bubble">
+						<img src="../ressources/images/distillery.jpg" alt="">
+					</div></a>
+					<h2>Les distilleries</h2>
+					<h3>L'authentique Whiskey</h3>
+				</div>
+
+				<div id="stpatrick" class="bubble_container">
+					<a href="#stpatrick_container"><div class="bubble">
+						<img src="../ressources/images/saint_patrick.jpg" alt="">
+					</div></a>
+					<h2>La St Patrick</h2>
+					<h3>La fête Irlandaise</h3>
+				</div>
+
+			</section>
+
+		</section>
+
+		<main id="main_ireland">
+
+			<div id="invisible_box"></div>
+
+			<section id="dublin_container" class="article_container">
+				<article>
+					<h3>Heureuse la ville où les citoyens obéissent</h3>
+					Dublin est la capitale officielle de la République d’Irlande. Ville cosmopolite, jeune et vivante, Dublin connait un essor sans précédent depuis plusieurs années, et est devenue une ville européenne à part entière, prônant le multi-culturalisme et le dynamisme économique. Les activités ne manquent pas, et cette ville est un véritable paradis pour le tourisme. Que ce soit pour le temps d’un week-end à Dublin, ou pour une découverte plus approfondie de la ville, Dublin n’en finit pas de surprendre les voyageurs du Monde entier par la qualité de ses attractions touristiques ! Voici une présentation de cette capitale haute en couleur mais qui n’en a pas moins gardé son échelle humaine…
+					<br><br>
+					Dublin évoque des grands noms de la littérature, l'architecture géorgienne et des torrents de Guinness. Là-bas, les soirées se passent à écumer les pubs au son de la musique animée. De jour, admirez les bâtiments superbes, les librairies suspendues dans le temps et les musées insolites tels que la bibliothèque Chester Beatty. Les espaces verts ne manquent pas, par exemple le parc de Saint Stephen's Green ou le jardin botanique d'Iveagh Gardens. Enfin, aucun séjour ne saurait se conclure sans une visite dans une distillerie locale où vous pouvez goûter aux alcools locaux comme le Jameson ou le Teeling.
+				</article>
+				<figure id="dublin_figure" class="figure_article">
+					<img src="../ressources/images/trinity.jpg">
+					<figcaption>Bibliothèque du Trinity College</figcaption>
+				</figure>
+			</section>
+
+			<section id="galway_container" class="article_container">
+				<article>
+					<h3>Merveille de l'Ouest Irlandais</h3>
+					Pour comprendre le folklore, les traditions et l’histoire de Galway, il faut se rendre au Musée de la Ville (Galway City Museum). Vous pourrez y apprendre que la ville de Galway est aussi appelée «ville des tribus», en référence aux quatorze tribus qui se partageaient la ville au 13e siècle. Divers objets, sculptures et autres outils anciens y sont ainsi présentés.
+					<br><br>
+					Le bâtiment le plus imposant de la ville est la Cathédrale de Notre-Dame de l’Assomption et de Saint-Nicolas. Véritable mastodonte d’architecture, elle est visible d’un peu partout dans la ville avec son très haut dôme. Rentrez y faire un tour, son intérieur est lui aussi impressionnant !
+					<br><br>
+					Galway abrite aussi la plus grande église médiévale d’Irlande, l’Église Saint Nicholas, vous pourrez la découvrir au détour d’une ruelle, dans le vieux centre de Galway, à deux pas de Shop Street.
+					<br><br>
+					D’ailleurs toute l’architecture médiévale en pierre a été extrêmement bien préservée, et rénovée. Deux des meilleurs exemples de cette conservation sont la Spanish Arch construite au 16e siècle pour protéger le petit port de pêche de Galway et le Bridge Mills (moulin du pont) sur la rivière Corrib, vieux de 430 ans !
+				</article>
+				<figure id="galway_figure" class="figure_article">
+					<img src="../ressources/images/galway_street.jpg">
+					<figcaption>Une rue animée de Galway</figcaption>
+				</figure>
+			</section>
+
+			<section id="distillery_container" class="article_container">
+				<article>
+					<h3>Jameson, Tullamore Dew, Midleton, Dublin Liberties...</h3>
+					Saviez-vous que les origines du whiskey sont irlandaises ? Bien que l’on attribue généralement cette découverte aux écossais, l’histoire de la création du whiskey est belle et bien 100% irlandaise ! Voilà pourquoi l’Irlande est tout aussi reconnue pour ses distilleries que son pays voisin !
+					<br>
+					Mais à chaque pays, ses techniques et son savoir-faire : voilà pourquoi l’Irlande, est reconnue depuis des siècles comme un spécialiste du whiskey… et sait se distinguer de la concurrence !
+					<br>
+					Il faut dire que le pays a plusieurs cordes à son arc : des ingrédients d’une grande pureté, un savoir-faire transmis sur plusieurs générations… et surtout, une technique unique en son genre : celui de la triple distillation !
+					<br><br>
+					S’il y a encore quelques années les distilleries irlandaises se faisaient rares, le spiritueux connait aujourd’hui une véritable renaissance. On le croyait mort et enterré, mais voilà que le whiskey irlandais renait de ses cendres et affiche une croissance insolente sur tous les marchés. Autrefois appelé « Uisce beathea » ce qui signifie eau de vie, le whiskey irlandais a terrifié les Anglais au XIIe siècle persuadés que cela rendait les Irlandais féroces au combat. Sir Thomas Philips acquit l'une des premières licences officielles en 1608, et créa aussitôt sa distillerie Old Bushmills. La fabrication des whiskies irlandais est bien différente de celle du scotch whisky. En effet, l’irish whiskey est produit à partir d’une orge non maltée, mais séchée généralement dans un four fermé et distillée trois fois dans de grands alambics, lesquels apportent un moelleux et un fruité caractéristique des whiskies irlandais.
+				</article>
+				<figure id="distillery_figure" class="figure_article">
+					<img src="../ressources/images/distillery_jameson.jpg">
+					<figcaption>La distillerie Jameson à Dublin</figcaption>
+				</figure>
+			</section>
+
+			<section id="stpatrick_container" class="article_container">
+				<article>
+					<h3>La convivialité à l'Irlandaise</h3>
+					Organisée chaque 17 mars, la Saint Patrick se déroule de nos jours, essentiellement dans la rue, et les Irish Pubs, lieux où vous pourrez trinquer en compagnie d’irlandais chaleureux et festifs.
+
+					Au programme, parades, concerts, sessions de musique traditionnelle en pleines rues, dégustations de bons petits plats irlandais, et pintes de Guinness ou autres bières irlandaises à gogo (à consommer avec modération bien sur) ! Possibilité bien sûr de danser, chanter, et faire la fête, peinturluré en vert, déguisé en leprechaun, ou simplement déguisé en Saint Patrick ! Ici, personne ne juge, les irlandais ne se prennent pas au sérieux, et c’est tant mieux !
+
+					Tout un programme qui démontre la simplicité et la chaleur festive des irlandais, toujours très attachés à leur pays !
+				</article>
+				<figure id="stpatrick_figure" class="figure_article">
+					<img src="../ressources/images/templebar.jpg">
+					<figcaption>Le Temple Bar, institution irlandaise</figcaption>
+				</figure>
+
+			</section>
+
+			<div id="to_top"><a href="#bg_container"><i class="fas fa-caret-square-up"></i></a></div>
+
+		</main>
+
+
+		<footer id="footer_bottom">
+			<section id="contact">
+				<ul id="contact_list">
+					<li><a href="mailto:jeremy.dejoux@laplateforme.io">jeremy.dejoux@laplateforme.io</a></li>
+					<li><a href="mailto:keany.albertini@laplateforme.io">keany.albertini@laplateforme.io</a></li>
+					<li><a href="mailto:theo.petropoulos@laplateforme.io">theo.petropoulos@laplateforme.io</a></li>
+				</ul>
+			</section>
+
+			<section id="social_networks">
+				<ul id="networks_list">
+					<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+					<li><a href=""><i class="fab fa-twitter"></i></a></li>
+					<li><a href=""><i class="fab fa-youtube"></i></a></li>
+					<li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+				</ul>
+			</section>
+
+			<section id="mentions">
+				<ul id="mentions_list">
+					<li><a href="">Mentions légales<div class="underl"></div></a></li>
+					<li><a href="">Accessibilité<div class="underl"></div></a></li>
+					<li><a href="">Confidentialité<div class="underl"></div></a></li>
+					<li><a href="">A propos<div class="underl"></div></a></li>
+				</ul>
+			</section>
+
+		</footer>
+
+	</body>
+
+</html>

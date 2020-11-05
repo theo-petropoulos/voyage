@@ -701,6 +701,7 @@ body{
 }
 
 @keyframes move_up_alt{
+
   0%{transform:translate(-50%, -50%)}
   40%{transform:translate(-50%,-170%)}
   53%{transform:translate(-50%,-140%)}
@@ -747,7 +748,8 @@ body{
     -moz-transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
     transform:rotate(0deg);
-    }
+    } 
+
   100%{
     -moz-transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
