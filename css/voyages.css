@@ -74,7 +74,7 @@ html{
 }
 
 #cont_afrique ~ a, #cont_europe ~ a, #cont_oceanie ~ a, #jeremy ~a, #keany ~a, #theo ~a{
-  background:white;
+  background: white;
   color:black;
   border-bottom:1px solid black;
 }
@@ -88,8 +88,8 @@ html{
   z-index:5;
     font-family: 'Allerta', cursive;
     width: 100%;
-    background: white;
-    color: rgb(224, 236, 228);
+    background: rgb(51, 51, 51);
+    color: rgb(51, 51, 51);
     box-shadow:0px 5px 5px rgba(0,0,0,0.4);
 }
 
@@ -102,7 +102,7 @@ html{
 }
 
 #nav_accueil a, .submenu a,{
-  color: white;
+  color: rgb(51, 51, 51);
   text-decoration: none;
 }
 
@@ -139,7 +139,7 @@ html{
 }
 
 .menu_buttons a{
-  color:white;
+  color:rgb(51, 51, 51);
   text-decoration:none;
   flex-grow:1;
 }
@@ -147,16 +147,16 @@ html{
 .menu_buttons:hover{
   border-top:3px solid white;
   cursor:pointer;
-} 
+}
 
 .menu_buttons:nth-child(2n-1){
-  background-color:#236EBA;
+  background-color: white;
   transform:scaleY(1.5);
   border-radius:0 0 20% 20%;
 }
 
 .menu_buttons:nth-child(2n){
-  background-color:#3399FF;
+  background-color: white;
   transform:scaleY(1.5);
   border-radius: 0 0 20% 20%;
 }
@@ -184,22 +184,22 @@ html{
 .continents_list:first-child li, .continents_list:last-child li{border-radius:20%;}
 .continents_list:nth-child(4) li:first-child{border-radius:20% 20% 0 0;} .continents_list:nth-child(4) li:last-child{border-radius:0 0 20% 20%;}
 
-.voyageur:first-child{border-radius:20% 20% 0 0;background:#66CCFF;color:#1A8CFF;}
-.voyageur:last-child{border-radius:0 0 20% 20%;background:#A0DFFF;color:#1A8CFF;}
-.voyageur:nth-child(2){background:#7FD4FF;color:#1A8CFF;}
+.voyageur:first-child{border-radius:20% 20% 0 0;background:rgb(51, 51, 51);color:white;}
+.voyageur:last-child{border-radius:0 0 20% 20%;background:rgb(51, 51, 51);color:white;}
+.voyageur:nth-child(2){background:rgb(51, 51, 51);color:white;}
 .voyageur:first-child li{border-radius:20%;}
 .voyageur:last-child li{border-radius:20%;}
 .voyageur:nth-child(2) li:first-child{border-radius: 20% 20% 0 0;} .voyageur:nth-child(2) li:last-child{border-radius:0 0 20% 20%;}
 
 .voyageur{text-transform: uppercase;}
 
-.continents_list:nth-child(1){background:#66CCFF;color:#1A8CFF;}
-.continents_list:nth-child(2){background:#7FD4FF;color:#1A8CFF;}
-.continents_list:nth-child(3){background:#A0DFFF;color:#1A8CFF;}
-.continents_list:nth-child(4){background:#BAE8FF;color:#1A8CFF;}
-.continents_list:nth-child(5){background:#D7F1FE;color:#1A8CFF;}
+.continents_list:nth-child(1){background:rgb(51, 51, 51);color:white;}
+.continents_list:nth-child(2){background:rgb(51, 51, 51);color:white;}
+.continents_list:nth-child(3){background:rgb(51, 51, 51);color:white;}
+.continents_list:nth-child(4){background:rgb(51, 51, 51);color:white;}
+.continents_list:nth-child(5){background:rgb(51, 51, 51);color:white;}
 
-.continents_list li{background:white;color:#FF883E;}
+.continents_list li{background:rgb(51, 51, 51);color:white;}
 
 .submenu li{
   height: 6vh;
@@ -207,13 +207,13 @@ html{
   align-items:center;
   justify-content: center;
   position:relative;
-  border-bottom:2px solid #1A8CFF;
+  border-bottom:2px solid white;
   z-index:2;
 }
 
 .submenu li:hover{
-  background-color: rgba(0, 0, 0, 0.3);
-  color: white;
+  background-color: white;
+  color: rgb(51, 51, 51);
   font-weight: bold;
 }
 
@@ -228,21 +228,22 @@ html{
 }
 
 .sub_submenu li{
-  background:white;
-  border-bottom:2px solid #1A8CFF;
-  border-left:2px solid #1A8CFF;
+  background:rgb(51, 51, 51);
+  border-bottom:2px solid white;
+  border-left:2px solid white;
 }
 
 .sub_submenu li a{
-  color:#1A8CFF;
+  color:white;
 }
 
 .sub_submenu li:hover{
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: white;
 }
 
 .sub_submenu li:hover a{
-  color: white;
+  color: rgb(51, 51, 51);
+  background-color: white;
 }
 
 /*** BODY ***/
