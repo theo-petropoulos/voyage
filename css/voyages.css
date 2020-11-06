@@ -477,7 +477,7 @@ body{
 
 .content p{
   font-family:'Cambay', courier;
-  font-size:calc(0.8em + 0.8vw);
+  font-size:calc(0.7em + 0.3vw);
   color:white;
   padding: 1% 2% 1% 2%;
 }
