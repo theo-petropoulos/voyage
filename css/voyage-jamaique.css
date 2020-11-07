@@ -1,0 +1,236 @@
+.text-box-jamaique {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.titre-jamaique{
+	filter: brightness(3);
+	font-size:150px;
+	font-weight: 850;
+	color: black;
+	display: block;
+	padding: 20px;
+	padding-bottom: 37px;
+	text-shadow: 0px -2px 3px rgba(255, 255, 255, 1);
+	text-shadow: 0px 2px 3px rgba(255, 255, 255, 1);
+}
+
+.titre-jamaique:nth-child(2) {
+	filter: brightness(3);
+	text-shadow: 0px -2px 3px rgba(255, 255, 255, 1);
+	text-shadow: 0px 2px 3px rgba(255, 255, 255, 1);
+	position: absolute;
+	color:  	black;
+	clip-path: inset(-1% -1% 53% -1%);
+
+}
+
+.container-jamaique {
+	padding-top: 50px;
+	padding-top: 50px;
+	display: flex;
+	justify-content: center;
+	background-image: url(../ressources/images/kingston3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-bottom: 3px solid black;
+
+}
+
+
+
+.decouverte-jamaique{
+	padding: 30px;
+	margin-right: 100px;
+	margin-left: 100px;
+	margin-bottom: 50px;
+	display: flex;
+
+}
+
+
+.jamaique-image{
+	margin-right: 100px;
+	position: relative;
+	border:2px solid black;
+	width: 600px;
+	height: 400px;
+}
+
+.origine-jamaique{
+	 position: absolute;
+	 width: 100%;
+	 height: 100%;
+}
+
+.img-hover{
+		 position: absolute;
+	 width: 100%;
+	 height: 100%;
+
+}
+
+.img-hover:hover{
+	transition: 2s ease;
+	opacity: 0;
+}
+
+.jamaique-texte-presentation{
+	display: flex;
+	width: 300px;
+	height: 400px;
+}
+
+
+.h3-decouverte{
+	text-align: center;
+	font-size: 30px;
+
+}
+
+
+.p-decouverte{
+	text-align: center;
+	border-left: solid 3px black;
+}
+
+.petite-image-jamaique{
+	width: 300px;
+	filter: grayscale(1);
+}
+
+.image-jam{
+	width: 300px;
+	margin-left: 30px;
+	margin-top: 34px;
+	filter: grayscale(1);
+
+}
+.petite-image-jamaique:hover{
+	filter: grayscale(0);
+
+}
+
+
+.image-jam:hover{
+	filter: grayscale(0);
+
+}
+
+
+.image-ville-jamaique{
+	border:solid  black ;
+	box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+
+	width: 200px;
+	height: 150px;
+	margin: 25px;
+	border-top-left-radius: 150px;
+	border-bottom-right-radius:150px;
+}
+.container-image-ville-jamaique {
+	display: flex;
+
+}
+
+.image-ville-jamaique:hover{
+	border-top-left-radius: 50px;
+	border-bottom-right-radius:50px;
+	transition-duration: 1.5s;
+	border-bottom-left-radius: 50px;
+	border-top-right-radius:50px;
+}
+.section-dunn{
+	flex-direction: column;
+	display: flex;
+	justify-content: center;
+}
+
+.chute-jam-container{
+	display: flex;
+	margin-top: 20px;
+	justify-content: center;
+
+
+}
+
+.chute-jam1{
+	width: 250px;
+	height: 200px;
+	padding: 50px;
+	border-top: solid 3px black;
+}
+
+.chute-jam{
+	width: 250px;
+	height: 200px;
+	padding: 50px;
+	border-top: solid 3px black;
+}
+
+.art-chute-dunn{
+	padding-top: 35px;
+	width: 200px;
+	padding-left: 50px;
+	border-top: solid 3px black;
+	text-align: center;
+
+
+}
+
+
+.drapeau-jam{
+	width: 300px;
+	height: 300px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-left: 200px;
+}
+
+
+.bob-jamaique{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+
+}
+
+.bob-jam{
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+	width: 600px;
+	border-radius: 20px;
+	border: solid 1px black;
+	box-shadow: 6px 3px 3px lightgrey;
+}
+
+.img-bob{
+	filter: grayscale(1);
+	width: 350px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+
+}
+
+.img-bob:hover{
+	width: 500px;
+	filter: grayscale(0);
+}
+
+
+
+.bob-jam p{
+	padding: 20px;
+}
+
+
+.section-dunn{
+	margin-bottom: 20px;
+}

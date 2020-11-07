@@ -86,11 +86,10 @@ html{
 #nav_acceuil{
   position:relative;
   z-index:5;
-    font-family: 'Allerta', cursive;
-    width: 100%;
-    background: rgb(51, 51, 51);
-    color: rgb(51, 51, 51);
-    box-shadow:0px 5px 5px rgba(0,0,0,0.4);
+  font-family: 'Allerta', cursive;
+  width: 100%;
+  background: rgb(51, 51, 51);
+  box-shadow:0px 5px 5px rgba(0,0,0,0.4);
 }
 
 #nav_acceuil > ul{
@@ -101,7 +100,7 @@ html{
   position: relative;
 }
 
-#nav_accueil a, .submenu a,{
+#nav_accueil a, .submenu a{
   color: rgb(51, 51, 51);
   text-decoration: none;
 }
@@ -202,13 +201,12 @@ html{
 .continents_list li{background:rgb(51, 51, 51);color:white;}
 
 .submenu li{
-  height: 6vh;
+  height: 3vh;
   display:flex;
   align-items:center;
   justify-content: center;
   position:relative;
   border-bottom:2px solid white;
-  z-index:2;
 }
 
 .submenu li:hover{
@@ -253,7 +251,7 @@ body{
   padding:0;
   overflow-x: hidden;
   position:relative;
-  /* background:#1A4D80; */
+  background:#1A4D80; 
 }
 
 #main_accueil{
@@ -428,8 +426,8 @@ body{
   background-position:bottom;
 }
 
-#norway_accueil summary{
-  background:url("../ressources/images/norway_accueil.jpg");
+#jamaique_accueil summary{
+  background:url("../ressources/images/jamaique_accueil.jpg");
   background-size:100%;
   background-position:bottom;
 }
@@ -446,7 +444,7 @@ body{
   opacity:0.85;
 }
 
-#nz_accueil h2, #norway_accueil h2{
+#nz_accueil h2, #jamaique_accueil h2{
   left:2%;
 }
 
@@ -479,7 +477,7 @@ body{
 
 .content p{
   font-family:'Cambay', courier;
-  font-size:calc(0.8em+0.8vw);
+  font-size:calc(0.7em + 0.3vw);
   color:white;
   padding: 1% 2% 1% 2%;
 }
@@ -715,7 +713,7 @@ body{
 @keyframes squeeze{
   0%{transform:scale(0.6, 1.4);}
   40%{transform:scale(0.7, 1.3);}
-  53%{transform:scale(1,2, 0.8);}
+  53%{transform:scale(1.2, 0.8);}
   63%{transform:scale(1.1, 0.9);}
   70%{transform:scale(0.95, 1.05);}
   75%{transform:scale(1.03, 0.97);}
